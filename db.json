@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Dell",
+      "author": "Europe",
+      "type": "computer",
+      "selected": false,
+      "available": true
+    },
+    {
+      "id": 2,
+      "title": "Bisto",
+      "author": "Bor",
+      "type": "oiseau",
+      "selected": true,
+      "available": false
+    },
+    {
+      "title": "felika",
+      "author": "gasy",
+      "type": "traka",
+      "selected": false,
+      "available": true,
+      "id": 3
+    },
+    {
+      "title": "sardine",
+      "author": "sea",
+      "type": "huawie",
+      "selected": true,
+      "available": true,
+      "id": 4
+    }
+  ]
+}

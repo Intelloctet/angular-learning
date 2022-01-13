@@ -1,0 +1,61 @@
+<nav>
+    <ul>
+        <li> <button (click)="onGetAllProducts()">All</button></li>
+        <li> <button (click)="onGetSelectedProducts()">Selected</button></li>
+        <li> <button (click)="onGetAvailabelProducts()">Available</button></li>
+        <li> <button (click)="onNewProduct()">New</button></li>
+   
+        <li class="search">
+            <form #f="ngForm" (ngSubmit)="onSearch(f.value)">
+                <input ngModel name="keyword" type="text"/>
+                <button>
+                    <span class="fa fa-search"></span>
+                </button>
+            </form>
+        </li>
+</ul>
+</nav>
+<div *ngIf="products$ | async as result" [ngSwitch]="result.dataState">
+    <div *ngSwitchCase="dataStateEnum.LOADING" class="state">
+        Loading.........
+    </div>
+    <div *ngSwitchCase="dataStateEnum.ERROR" class="state">
+        <div >{{result.errorMessage}}</div>
+    </div>
+    <div *ngSwitchCase="dataStateEnum.LOADED" class="state">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th><th>Title</th><th>Author</th><th>Type</th><th>Selected</th><th>Available</th><th colspan="3"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of result.data">
+                    <td>{{p.id}}</td>
+                    <td>{{p.title}}</td>
+                    <td>{{p.author}}</td>
+                    <td>{{p.type}}</td>
+                    <td>{{p.selected}}</td>
+                    <td>{{p.available}}</td>
+                    <td>
+                        <button (click)="onSelect(p)" ngClass="onSelect">
+                            <span *ngIf="!p.selected"ngClass="selectBtn">SELECT</span>
+                            <span *ngIf="p.selected" ngClass="unSelectBtn">UNSELECT</span>
+                        </button>
+                    </td>
+                    <td>
+                        <button (click)="onEdit(p)" ngClass="editBtn">
+                            <span class="fa fa-edit"></span>
+                        </button>
+                    </td>
+                    <td>
+                        <button (click)="onDelete(p)" ngClass="delBtn">
+                            <span class="fa fa-trash"></span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
