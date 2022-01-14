@@ -1,6 +1,6 @@
-import { ProductsService } from './../../services/products.service';
+import { ProductsService } from '../../../services/products.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Product } from './../../model/product.model';
+import { Product } from '../../../model/product.model';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
@@ -33,7 +33,7 @@ export class ProductEditComponent implements OnInit {
           available:[product.available,Validators.required],
         });
       }
-    );   
+    );
   }
   onUpdateProduct(){
     this.submitted = true;

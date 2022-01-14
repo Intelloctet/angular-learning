@@ -1,0 +1,17 @@
+tr td {
+  border: 1px solid black;
+  padding: 5px 25px;
+}
+.onSelect{
+  padding: 0%;
+}
+.delBtn,.selectBtn{
+  background-color: red;
+  width: 100%;
+}
+.unSelectBtn{
+  background-color: green;
+}
+.editBtn{
+  background-color: rgb(0, 119, 255);
+}

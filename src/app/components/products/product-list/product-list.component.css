@@ -1,0 +1,12 @@
+/* Table style*/
+.state {
+  margin-left: 50px;
+}
+.state table {
+  margin: 50px;
+  border-collapse: collapse;
+}
+.state table thead tr th {
+  border: 1px solid black;
+  padding: 5px 25px;
+}

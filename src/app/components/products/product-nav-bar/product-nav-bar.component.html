@@ -1,0 +1,17 @@
+<nav>
+  <ul>
+      <li> <button (click)="onGetAllProducts()">All</button></li>
+      <li> <button (click)="onGetSelectedProducts()">Selected</button></li>
+      <li> <button (click)="onGetAvailabelProducts()">Available</button></li>
+      <li> <button (click)="onNewProduct()">New</button></li>
+
+      <li class="search">
+          <form #f="ngForm" (ngSubmit)="onSearch(f.value)">
+              <input ngModel name="keyword" type="text"/>
+              <button>
+                  <span class="fa fa-search"></span>
+              </button>
+          </form>
+      </li>
+</ul>
+</nav>
