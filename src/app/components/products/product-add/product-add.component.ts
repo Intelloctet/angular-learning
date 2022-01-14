@@ -1,4 +1,4 @@
-import { ProductsService } from './../../services/products.service';
+import { ProductsService } from '../../../services/products.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
@@ -9,10 +9,10 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-add.component.css']
 })
 export class ProductAddComponent implements OnInit {
- 
+
   productFormGroup?:FormGroup;
   submitted:Boolean= false;
-  
+
   constructor(private fb:FormBuilder,private productsService:ProductsService) {   }
 
   ngOnInit(): void {

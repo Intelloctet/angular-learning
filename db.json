@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "title": "Dell",
+      "title": "gisa",
       "author": "Europe",
       "type": "computer",
       "selected": false,
@@ -10,27 +10,27 @@
     },
     {
       "id": 2,
-      "title": "Bisto",
-      "author": "Bor",
+      "title": "Bistro",
+      "author": "Bord",
       "type": "oiseau",
       "selected": true,
-      "available": false
+      "available": true
     },
     {
-      "title": "felika",
-      "author": "gasy",
-      "type": "traka",
+      "title": "boot",
+      "author": "system",
+      "type": "linux",
       "selected": false,
       "available": true,
-      "id": 3
+      "id": 5
     },
     {
-      "title": "sardine",
-      "author": "sea",
-      "type": "huawie",
+      "title": "cacao",
+      "author": "ambilobe",
+      "type": "fruit",
       "selected": true,
       "available": true,
-      "id": 4
+      "id": 6
     }
   ]
 }
