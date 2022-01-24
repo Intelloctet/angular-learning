@@ -1,0 +1,12 @@
+<ul>
+  <li><button (click)="onGetAllProducts()">All</button></li>
+  <li><button (click)="onGetSelectedProducts()">Selected</button></li>
+  <li><button (click)="onGetAvailableProducts()">Available</button></li>
+  <li><button (click)="onNewProducts()">New</button></li>
+  <li>
+    <form #f="ngForm" (ngSubmit)="onSearchProducts(f.value)">
+      <input type="search" ngModel name="keyword" />
+      <button><span class="fa fa-search"></span></button>
+    </form>
+  </li>
+</ul>

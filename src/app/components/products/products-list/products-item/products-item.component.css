@@ -1,0 +1,13 @@
+tr td:not(:first-child) {
+  padding-left: 2%;
+  border: 2px solid black;
+  width: 10%;
+}
+tr td:first-child{
+  text-align: center;
+  border: 2px solid black;
+}
+tr td button {
+  width: 80%;
+  margin: 3% 1%;
+}

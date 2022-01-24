@@ -1,0 +1,16 @@
+form {
+  width: 60%;
+  height: 100%;
+  margin: 5% 20%;
+  font-size: large;
+}
+form fieldset input:not([type="checkbox"]), form fieldset button{
+  display: inline-block;
+  font-size: large;
+  width: 99%;
+  margin: 10px 0px;
+  padding: 5px;
+}
+form fieldset input[type="checkbox"]{
+  margin-left: 20px;
+}

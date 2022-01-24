@@ -1,0 +1,23 @@
+<form *ngIf="productFormGroup" [formGroup]="productFormGroup">
+  <fieldset>
+    <label for="name">Name</label><br/>
+    <input type="text" formControlName="name"/><br/>
+    <label for="price">Price</label><br/>
+    <input type="number" formControlName="price"/><br/>
+    <label for="quantity">Quantity</label><br/>
+    <input type="number" formControlName="quantity"/><br/>
+    <table>
+      <tbody>
+        <tr>
+          <td><label for="select" class="checkbox">Select</label></td>
+          <td><input type="checkbox" formControlName="selected"/><br/></td>
+        </tr>
+        <tr>
+          <td><label for="available" class="checkbox">Available</label></td>
+          <td><input type="checkbox" formControlName="available"/><br/></td>
+        </tr>
+      </tbody>
+    </table>
+    <button (click)="onUpdateProduct()">save</button>
+  </fieldset>
+</form>

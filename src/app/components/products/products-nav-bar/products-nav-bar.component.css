@@ -1,0 +1,21 @@
+ul{
+  margin: 50px;
+  padding: 0px;
+}
+ul li {
+  display: inline-block;
+  margin-left: 5px;
+
+}
+ul li>button{
+  padding: 5px 30px;
+}
+/***** Search Button *****/
+ul li:last-child {
+  float: right;
+}
+ul li form input, ul li form  button{
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 6px;
+}

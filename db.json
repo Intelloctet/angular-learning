@@ -2,35 +2,35 @@
   "products": [
     {
       "id": 1,
-      "title": "gisa",
-      "author": "Europe",
-      "type": "computer",
+      "name": "gisa",
+      "price": 15,
+      "quantity": 2,
       "selected": false,
       "available": true
     },
     {
       "id": 2,
-      "title": "Bistro",
-      "author": "Bord",
-      "type": "oiseau",
-      "selected": true,
+      "name": "Bitro",
+      "price": 52,
+      "quantity": 23,
+      "selected": false,
       "available": true
     },
     {
-      "title": "boot",
-      "author": "system",
-      "type": "linux",
+      "id": 3,
+      "name": "akoho",
+      "price": 352,
+      "quantity": 20,
       "selected": false,
-      "available": true,
-      "id": 5
+      "available": false
     },
     {
-      "title": "cacao",
-      "author": "ambilobe",
-      "type": "fruit",
+      "id": 4,
+      "name": "cacao",
+      "price": 61,
+      "quantity": 20,
       "selected": true,
-      "available": true,
-      "id": 6
+      "available": true
     }
   ]
 }

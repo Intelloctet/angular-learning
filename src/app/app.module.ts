@@ -1,39 +1,44 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { AppComponent } from "./app.component";
 import { HomeComponent } from './components/home/home.component';
 import { ProductsComponent } from './components/products/products.component';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ProductAddComponent } from './components/products/product-add/product-add.component';
-import { ProductEditComponent } from './components/products/product-edit/product-edit.component';
-import { ProductNavBarComponent } from './components/products/product-nav-bar/product-nav-bar.component';
-import { ProductListComponent } from './components/products/product-list/product-list.component';
-import { ProductItemComponent } from './components/products/product-list/product-item/product-item.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { ProductsListComponent } from './components/products/products-list/products-list.component';
+import { ProductsItemComponent } from './components/products/products-list/products-item/products-item.component';
+import { ProductsNavBarComponent } from './components/products/products-nav-bar/products-nav-bar.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { FeaturesComponent } from './features/features.component';
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { ProductsAddComponent } from './components/products/products-add/products-add.component';
+import { ProductRoutingModule } from "./routes/product-routing.module";
+import { ProductsEditComponent } from './components/products/products-edit/products-edit.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavBarComponent,
-    HomeComponent,
-    ProductsComponent,
-    ProductAddComponent,
-    ProductEditComponent,
-    ProductNavBarComponent,
-    ProductListComponent,
-    ProductItemComponent
-  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ProductRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    ProductsComponent,
+    NavBarComponent,
+    ProductsListComponent,
+    ProductsItemComponent,
+    ProductsNavBarComponent,
+    FeaturesComponent,
+    ProductsAddComponent,
+    ProductsEditComponent,
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
